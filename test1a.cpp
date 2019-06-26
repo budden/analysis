@@ -17,3 +17,7 @@ void test_path_sensitiv_with_errors() {
 	free_mem_by_pts_simple(x,1); // первое освобождение (не двойное)
 	std::cout << *x; // clang понял, что память освобождена и выдал предупреждение
 }
+
+int main() {
+	test_path_sensitiv_with_errors();
+};
